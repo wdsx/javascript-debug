@@ -1,3 +1,5 @@
+/*global define*/
+
 /*!
  * JavaScript Debug - v0.4 - 6/22/2010
  * http://benalman.com/projects/javascript-debug-console-log/
@@ -57,11 +59,11 @@
 // methods will not be passed through if the logging level is set to 0 via
 // <debug.setLevel>.
 
-window.debug = (function(){
-  var window = this,
+define(function(){
+  //var window = this;
     
     // Some convenient shortcuts.
-    aps = Array.prototype.slice,
+    var aps = Array.prototype.slice,
     con = window.console,
     
     // Public object to be returned.
