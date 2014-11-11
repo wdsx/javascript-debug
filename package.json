@@ -23,6 +23,8 @@
   "devDependencies": {
     "karma": "^0.12.24",
     "karma-chrome-launcher": "^0.1.5",
-    "karma-mocha": "^0.1.9"
+    "karma-mocha": "^0.1.9",
+    "karma-requirejs": "^0.2.2",
+    "requirejs": "^2.1.15"
   }
 }
