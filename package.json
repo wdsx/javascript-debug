@@ -1,0 +1,23 @@
+{
+  "name": "javascript-debug",
+  "version": "0.4.1",
+  "description": "A simple wrapper for console.log",
+  "main": "ba-debug.js",
+  "directories": {
+    "doc": "docs",
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://AndySw@github.com/AndySw/javascript-debug.git"
+  },
+  "author": "Ben Alman",
+  "license": "MIT, GPL",
+  "bugs": {
+    "url": "https://github.com/AndySw/javascript-debug/issues"
+  },
+  "homepage": "https://github.com/AndySw/javascript-debug"
+}

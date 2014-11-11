@@ -1,0 +1,21 @@
+{
+  "name": "javascript-debug",
+  "version": "0.4.1",
+  "homepage": "https://github.com/AndySw/javascript-debug",
+  "description": "A simple wrapper for console.log",
+  "main": "ba-debug.js",
+  "moduleType": [
+    "amd"
+  ],
+  "authors": [
+    "Ben Alman"
+  ],
+  "license": "MIT, GPL",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
