@@ -1,11 +1,5 @@
-(function () {/*global define*/
-
-    require.config({
-        paths: {
-            trace: 'src/trace'
-        }
-    });
-
-define("src/main", function(){});
-
-}());
+require.config({
+    paths: {
+        debug: 'src/ba-debug'
+    }
+});

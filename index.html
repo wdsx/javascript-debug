@@ -6,8 +6,8 @@
     <body>
         <script type="text/javascript">
         requirejs(['src/main'], function() {
-            requirejs(['trace'], function(trace) {
-                trace.log('Hello World!');
+            requirejs(['debug'], function(trace) {
+                trace.log(console);
             });
         });
         </script>
