@@ -1,5 +1,5 @@
 /*global define*/
-describe("A test suite", function() {
+describe("", function() {
     it('should fail', function() { 
         assert('foo' === 'bar', 'foo is not bar');
     });

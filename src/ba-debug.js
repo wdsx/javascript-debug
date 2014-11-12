@@ -1,6 +1,5 @@
 /*global define*/
 define(function(){
-  //var window = this;
     
     // Some convenient shortcuts.
     var aps = Array.prototype.slice,

@@ -1,13 +1,43 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Javascript-Debug</title>
         <script src="lib/requirejs/require.js"></script>
     </head>
     <body>
         <script type="text/javascript">
         requirejs(['src/main'], function() {
-            requirejs(['debug'], function(trace) {
-                trace.log(console);
+            requirejs(['debug'], function(debug) {
+
+                var a = 0,
+                  b = 'two',
+                  c = { foo: 1, bar: 2, baz: 'three' },
+                  d = false,
+                  e = [ 3, 4, 5, 6, 7, 8 ];
+                
+                function log_stuff() {
+                  a++;
+                  d = !d;
+                  
+                  debug.group( 'start of group' );
+                  debug.log( a );
+                  debug.debug( b );
+                  debug.info( c );
+                  debug.warn( d );
+                  debug.error( e );
+                  debug.groupEnd();
+                  
+                  debug.time( 'test' );
+                  
+                  debug.log( a, b, c, d, e );
+                  debug.log([ a, b, c, d, e ]);
+                  
+                  (function() { debug.log( arguments ); })( a, b, c, d, e );
+                  
+                  debug.timeEnd( 'test' );
+                };
+                
+                log_stuff();
             });
         });
         </script>
