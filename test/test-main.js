@@ -17,7 +17,7 @@ require.config({
   baseUrl: '/base',
 
   paths: {
-    debug: '/src/ba-debug'
+    debug: 'src/ba-debug'
   },
 
   // dynamically load all test files
